@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary" >
+
+
+    <ImageView
+
+        android:id="@+id/imgRestlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="247dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+      />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_below="@id/imgRestlogo"
+        android:layout_marginTop="0dp"
+        android:background="@color/linear"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reservation"
+            android:layout_width="204dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_wh_gray"
+            android:padding="17dp"
+            android:text="@string/make_reservation"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="212dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="124dp"
+            android:background="@drawable/btn_wh_gray"
+            android:text="@string/order"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_login_employee"
+            android:layout_width="220dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="112dp"
+            android:padding="17dp"
+            android:text="@string/login_admin"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_wh_gray"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="130dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="20dp"
+            android:lineSpacingExtra="30sp"
+            android:text="@string/i_am_employee"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+
+        <CheckBox
+            android:id="@+id/employee_chk"
+            android:layout_width="41dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="196dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.903" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

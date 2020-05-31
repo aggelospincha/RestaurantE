@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ProductFragments.Drinks">
+
+
+    <ImageView
+
+        android:id="@+id/imgRestlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="247dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="419dp"
+        android:layout_below="@id/imgRestlogo"
+        android:layout_marginTop="0dp"
+        android:background="@color/linear"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/nero_chk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anthrakouxo_chk" />
+
+        <CheckBox
+            android:id="@+id/krasi_chk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nero_chk" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="281dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/menu_5_drinks"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <CheckBox
+            android:id="@+id/anthrakouxo_chk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
